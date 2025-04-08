@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(74, 67, 67);
+        width: 100vw;
+        height: 1000px;
+      }
+      .div1 {
+        font-family: cursive;
+        font-size: 25px;
+        position: relative;
+       
+        animation: colorChange 2s backwards infinite, ani 3s backwards infinite;
+      }
+      .outer{
+        background-color: rgb(208, 196, 196);
+        margin: 50px;
+        overflow: hidden;
+        width: 80%;
+
+      }
+
+      @keyframes ani {
+        from {
+          left: 0%;
+        }
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes colorChange {
+        0% {
+          color: rgb(153, 255, 0);
+        }
+        25% {
+          color: rgb(9, 3, 8);
+        }
+        50% {
+          color: rgb(176, 30, 205);
+        }
+        75%{
+            color: rgb(226, 21, 21) ;
+        }
+        100% {
+          color: rgb(0, 13, 255);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+    <div class="div1">This is infinity</div></div>
+  </body>
+</html>
